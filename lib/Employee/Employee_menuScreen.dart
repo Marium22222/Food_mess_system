@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class EmployeeMenuScreen extends StatefulWidget {
-  const EmployeeMenuScreen({super.key});
+  final List<String> inputs;
+  const EmployeeMenuScreen({super.key, required this.inputs});
 
   @override
   State<EmployeeMenuScreen> createState() => _EmployeeMenuScreenState();
 }
 
 class _EmployeeMenuScreenState extends State<EmployeeMenuScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +36,7 @@ class _EmployeeMenuScreenState extends State<EmployeeMenuScreen> {
                   ),
                   ),
                 child: ListTile(
-                  title: Text("Menu Day1"),
+                  title: Text("meal"),
                   leading: Icon(Icons.food_bank),
 
                 ),

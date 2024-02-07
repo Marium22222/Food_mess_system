@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nastp_mess_food_subscription/Employee/Employee_mainScreen.dart';
+import 'package:nastp_mess_food_subscription/MESS/Mess_MainScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -63,7 +64,10 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 50,
               ),
-              ElevatedButton(onPressed: () {}, child: Text("Login as MESS")),
+              ElevatedButton(onPressed: () {
+                Get.to(MessMainScreen());
+              }, child: Text("Login as MESS")),
+
               ElevatedButton(onPressed: () {}, child: Text("Login as Company")),
               ElevatedButton(
                   onPressed: () {
